@@ -1,0 +1,110 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-11T20:49:41.951Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "TC01_Read_hotel_reservation_information",
+        "description": "",
+        "id": "read-the-hotel-reservation-information-from-the-database;tc01-read-hotel-reservation-information",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1381000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user connects to the database",
+            "match": {
+              "location": "stepdefinitions.database_step_definitions.Read_Step_Definitions.user_connects_to_the_database()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 220000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user gets the \"Price\" from \"tHOTEL\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"tHOTEL\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.database_step_definitions.Read_Step_Definitions.user_gets_the_from_table(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.database_step_definitions.Read_Step_Definitions.user_reads_all_of_the_column_data(Read_Step_Definitions.java:24)\r\n\tat ✽.user reads all of the \"Price\" column data(file:///C:/Users/ulger/IdeaProjects/cucumber-framework/./src/test/resources/features/database_features/read.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user reads all of the \"Price\" column data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.database_step_definitions.Read_Step_Definitions.user_reads_all_of_the_column_data(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db_read"
+          }
+        ]
+      }
+    ],
+    "name": "read_the_hotel_reservation_information_from_the_database",
+    "description": "",
+    "id": "read-the-hotel-reservation-information-from-the-database",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/database_features/read.feature",
+    "tags": [
+      {
+        "name": "@db_read",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

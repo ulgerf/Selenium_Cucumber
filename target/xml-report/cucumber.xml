@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.948">
+<testcase classname="read_the_hotel_reservation_information_from_the_database" name="TC01_Read_hotel_reservation_information" time="1.679">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given user connects to the database.........................................passed
+And user gets the "Price" from "tHOTEL" table...............................passed
+And user reads all of the "Price" column data...............................failed
+
+StackTrace:
+java.lang.NullPointerException
+	at stepdefinitions.database_step_definitions.Read_Step_Definitions.user_reads_all_of_the_column_data(Read_Step_Definitions.java:24)
+	at ✽.user reads all of the "Price" column data(file:///C:/Users/ulger/IdeaProjects/cucumber-framework/./src/test/resources/features/database_features/read.feature:6)
+]]></failure>
+</testcase>
+</testsuite>
